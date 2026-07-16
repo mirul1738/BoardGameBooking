@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Game | NSFS Booking Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🎲 NSFS Booking Portal
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html" class="active">Book Game</a></li>
+        <li><a href="summary.html">My Bookings</a></li>
+    </ul>
+
+</nav>
+
+<div class="booking-container">
+
+    <h2>Book a Board Game</h2>
+
+    <form id="bookingForm">
+
+        <label>Select Date</label>
+        <input
+            type="date"
+            id="date"
+            required
+        >
+
+        <label>Select Time</label>
+
+        <select id="time" required>
+
+            <option value="">Choose a time</option>
+
+            <option>0900 - 1000</option>
+            <option>1000 - 1100</option>
+            <option>1100 - 1200</option>
+            <option>1300 - 1400</option>
+            <option>1400 - 1500</option>
+            <option>1500 - 1600</option>
+            <option>1600 - 1700</option>
+            <option>1700 - 1800</option>
+
+        </select>
+
+        <label>Choose Board Game</label>
+
+        <select id="game" required>
+
+            <option value="">Select a game</option>
+
+            <option>Catan</option>
+            <option>Monopoly</option>
+            <option>Uno</option>
+            <option>Exploding Kittens</option>
+            <option>Chess</option>
+            <option>Risk</option>
+            <option>Azul</option>
+            <option>Pandemic</option>
+            <option>Scrabble</option>
+            <option>Ticket To Ride</option>
+
+        </select>
+
+        <label>Number of Players</label>
+
+        <input
+            type="number"
+            id="players"
+            min="2"
+            max="10"
+            required
+        >
+
+        <label>Remarks (Optional)</label>
+
+        <input
+            type="text"
+            id="remarks"
+            placeholder="Any additional remarks..."
+        >
+
+        <button type="submit">
+            Book Game
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
